@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student: one
+  group: one
+  status: 1
+  enrolled_at: 2026-11-11 11:35:44
+
+two:
+  student: two
+  group: two
+  status: 1
+  enrolled_at: 2026-11-11 11:35:44
