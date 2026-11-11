@@ -9,7 +9,7 @@ class CreateEnrollments < ActiveRecord::Migration[8.1]
       t.timestamps
     end
 
-    add_index :enrollments, [:student_id, :group_id],
+    add_index :enrollments, [ :student_id, :group_id ],
               unique: true,
               where: "status = 0",
               name: "index_enrollments_on_active_student_and_group"
