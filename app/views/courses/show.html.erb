@@ -1,0 +1,7 @@
+<h1><%= @course.name %></h1>
+<p><%= @course.description %></p>
+
+<%= link_to t(".edit"), edit_course_path(@course) %>
+<%= button_to t(".delete"), @course, method: :delete,
+              form: { data: { turbo_confirm: t(".confirm_delete") } } %>
+<%= link_to t(".back"), courses_path %>
