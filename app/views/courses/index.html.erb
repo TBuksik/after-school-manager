@@ -1,0 +1,13 @@
+<h1><%= t(".title") %></h1>
+
+<%= link_to t(".new_course"), new_course_path %>
+
+<% if @courses.any? %>
+  <ul>
+    <% @courses.each do |course| %>
+      <li><%= link_to course.name, course %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p><%= t(".empty") %></p>
+<% end %>
